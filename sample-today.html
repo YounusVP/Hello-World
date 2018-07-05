@@ -1,0 +1,182 @@
+<html>
+
+<head>
+
+ <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+
+ <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+
+</head>
+<style>
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    left: 0;
+    top: 150px;
+    min-width: 50%; 
+    max-height: 50%;
+}
+* {
+	margin: 0;
+	padding: 0;
+	}
+	body {
+	background: url("photo.png");
+	display: cover;
+	background-repeat: no-repeate;
+	}
+
+	.container1 {
+		backgorund: black;
+		display: flex;
+		}
+	h1 {
+	font-family: 'Lato', sans-serif;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 100px;
+	color: black;
+	margin: 0 auto;
+	padding: 0 auto;
+	z-index: 1;
+	}
+	.social-icons {
+		text-align: right;
+		margin: 0 auto;
+		padding: 0 auto;
+		display: flex;
+		justify-content: centre;
+		align-items: center;
+		}
+			
+	.social-icons li {
+		display: inline;
+		list-style-type: none;
+		vertical-align: middle;
+		text-align: center;
+		}
+	.social-icons li img {
+		width: 35px;
+		height: 35px;
+		margin-right: 20px;
+		}
+
+	.container3 {
+		height: 150px;
+		background: black;
+		}
+		p {
+		font-family: 'Lato', sans-serif;
+		font-size: 75px;
+		text-align: left;
+		padding: 100px 0 0 150px;
+		background-color: rgba(255, 255, 255, 0.9); 
+		}
+		.title-img {
+		padding: 0 0 0 750px;
+		margin: 0;
+		} 	
+
+
+
+
+/*
+
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+*/
+
+</style>
+<body>
+<div class="container1">
+	<h1>The Fellow Indian</h1>
+	<ul class="social-icons">
+		<li><img src="twitter.png" alt="socil-twitter"/></li>
+		<li><img src="facebook.png" alt="socil-facebook"/></li>
+		<li><img src="youtube.png" alt="socil-youtube"/></li>
+	</ul>
+	
+	</div>
+
+	<div class="container2">
+
+		<video autoplay muted loop id="myvideo">
+ 		<source src="cloud.mp4" type="video/mp4">
+		</video>
+		<div class="content">
+		 <p>Infidels.</br>
+		 Not Religious.</br>
+		 Democratic.</p>
+		</div>
+	</div>
+	<div class="container3"></div>
+
+
+
+
+<!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="cloud.mp4" type="video/mp4">
+</video>
+
+
+<!--
+
+
+
+<!-- Optional: some overlay text to describe the video -->
+
+</body>
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+    } else {
+        video.pause();
+        btn.innerHTML = "Play";
+    }
+}
+</script>
+
+
+
+
+</html>
+
+
+
+

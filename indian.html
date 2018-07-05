@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+
+ <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+
+ <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+
+</head>
+<style>
+	* {
+	margin: 0;
+	padding: 0;
+	}
+	body {
+	background: url("photo.png");
+	display: cover;
+	background-repeat: no-repeate;
+	}
+
+	.container1 {
+		backgorund: white;
+		display: flex;
+		}
+	h1 {
+	font-family: 'Lato', sans-serif;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 100px;
+	color: BLACK;
+	margin: 0 auto;
+	padding: 0 auto;
+	}
+	.social-icons {
+		text-align: right;
+		margin: 0 auto;
+		padding: 0 auto;
+		display: flex;
+		justify-content: centre;
+		align-items: center;
+		}
+			
+	.social-icons li {
+		display: inline;
+		list-style-type: none;
+		vertical-align: middle;
+		text-align: center;
+		}
+	.social-icons li img {
+		width: 35px;
+		height: 35px;
+		margin-right: 20px;
+		}
+	
+	.container2 {
+		}
+	#myvideo {
+    		position: fixed;
+   		right: 0;
+    		bottom: 0;
+    		min-width: 100%; 
+    		min-height: 100%;
+		}
+	.container3 {
+		height: 150px;
+		background: black;
+		}
+		p {
+		font-family: 'Lato', sans-serif;
+		font-size: 75px;
+		text-align: left;
+		padding: 100px 0 0 150px;
+		background-color: rgba(255, 255, 255, 0.9); 
+		}
+		.title-img {
+		padding: 0 0 0 750px;
+		margin: 0;
+		} 
+</style>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body>
+	<div class="container1">
+	<h1>The Fellow Indian</h1>
+	<ul class="social-icons">
+		<li><img src="twitter.png" alt="socil-twitter"/></li>
+		<li><img src="facebook.png" alt="socil-facebook"/></li>
+		<li><img src="youtube.png" alt="socil-youtube"/></li>
+	</ul>
+	
+	</div>
+	
+	
+
+	<div class="container2">
+
+		<video autoplay muted loop id="myVideo">
+ 		<source src="video.mp4" type="video/mp4">
+		</video>
+
+		<p>Infidels.</br>
+		Not Religious.</br>
+		Democratic.</p>
+	</div>
+	<div class="container3"></div>
+
+</body>
